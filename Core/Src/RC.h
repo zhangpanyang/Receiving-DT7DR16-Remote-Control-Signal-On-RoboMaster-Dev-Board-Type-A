@@ -7,6 +7,9 @@
 
 #include "main.h"
 
+float linearMappingInt2Float(int in,int in_min,int in_max,float out_min,float out_max);
+int linearMappingFloat2Int(float in,float in_min,float in_max,int out_min,int out_max);
+
 const int RC_RX_BUF_SIZE = 18;
 const int RC_RX_DATA_SIZE = 18;
 
