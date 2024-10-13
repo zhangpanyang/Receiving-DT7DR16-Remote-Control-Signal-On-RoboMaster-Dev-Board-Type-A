@@ -10,7 +10,7 @@
 const int RC_RX_BUF_SIZE = 18;
 const int RC_RX_DATA_SIZE = 18;
 
-enum RCSwitchState_e {UP_POS, MID_POS, DOWN_POS};
+typedef enum{UP_POS, MID_POS, DOWN_POS}  RCSwitchState_e;
 
 class RC{
 private:
@@ -32,6 +32,10 @@ public:
 	static void init();
 	static void frameHandle();
 };
+uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
+uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
+// struct RC::RCChannel;
+// struct RC::RCSwitch;
 
 
 
