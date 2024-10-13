@@ -24,19 +24,31 @@ void RC::init()
 	switch_.l = MID_POS;
 	switch_.r = MID_POS;
 
-	HAL_UART_Receive_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
 }
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
 	if (huart == &huart1)
 	{
-		RC::frameHandle();
+		if (Size == RC_RX_BUF_SIZE)
+		{
+			RC::frameHandle();
+		}
 	}
 }
 
 void RC::frameHandle()
 {
 	std::memcpy(rx_buf_, rx_data_, sizeof(rx_buf_));
-	std::memset(rx_buf_, 0, sizeof(rx_buf_));
+	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+
+	channel_.r_row = linearMappingInt2Float((uint16_t)rx_data_[0]<<3 | rx_data_[1]>>5,										364, 1684, -1.0, 1.0);
+	channel_.l_col = linearMappingInt2Float((uint16_t)(rx_data_[1]&0x1f)<<6 | rx_data_[2]>>2,								364, 1684, -1.0, 1.0);
+	channel_.r_col = linearMappingInt2Float((uint16_t)(rx_data_[2]&0x03)<<9 | (uint16_t)rx_data_[3]<<1 | rx_data_[4]>>7,	364, 1684, -1.0, 1.0);
+	channel_.l_row = linearMappingInt2Float((uint16_t)(rx_data_[4]&0x7f)<<4 | rx_data_[5]>>4,								364, 1684, -1.0, 1.0);
+
+	switch_.r = RCSwitchStates[ (rx_data_[5]>>2 & 0x03) - 1 ];
+	switch_.l = RCSwitchStates[ (rx_data_[5] & 0x03) - 1 ];
+
 }

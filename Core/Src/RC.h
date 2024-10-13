@@ -13,7 +13,8 @@ int linearMappingFloat2Int(float in,float in_min,float in_max,int out_min,int ou
 const int RC_RX_BUF_SIZE = 18;
 const int RC_RX_DATA_SIZE = 18;
 
-typedef enum{UP_POS, MID_POS, DOWN_POS}  RCSwitchState_e;
+typedef enum{UP_POS, DOWN_POS, MID_POS}  RCSwitchState_e;
+const RCSwitchState_e RCSwitchStates[] = {UP_POS, DOWN_POS, MID_POS};
 
 class RC{
 private:
@@ -37,9 +38,5 @@ public:
 };
 uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
 uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
-// struct RC::RCChannel;
-// struct RC::RCSwitch;
-
-
 
 #endif //RC_H
