@@ -13,10 +13,12 @@ int linearMappingFloat2Int(float in,float in_min,float in_max,int out_min,int ou
 	return (out_max-out_min)*(in-in_min)/(in_max-in_min)+out_min;
 }
 
-void RC_init()
-{
-
-}
+uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
+uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
+RCChannel RC::channel_;
+RCSwitch RC::switch_;
+RCMouse RC::mouse_;
+uint8_t RC::keys_;
 
 void RC::init()
 {

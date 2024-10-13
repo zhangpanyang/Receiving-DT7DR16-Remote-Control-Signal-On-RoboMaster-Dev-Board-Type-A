@@ -7,7 +7,7 @@
 
 void startup()
 {
-	// RC_init();
+	RC::init();
 	while(1)
 	{
 

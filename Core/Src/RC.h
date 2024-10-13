@@ -54,15 +54,9 @@ public:
 	static void init();
 	static void frameHandle();
 };
-uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
-uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
-RCChannel RC::channel_;
-RCSwitch RC::switch_;
-RCMouse RC::mouse_;
-uint8_t RC::keys_;
 
 enum {RC_KEY_W, RC_KEY_S, RC_KEY_A, RC_KEY_D, RC_KEY_Q, RC_KEY_E, RC_KEY_SHIFT, RC_KEY_CTRL};
 
 void RC_init();
 
-#endif //RC_H
+#endif
