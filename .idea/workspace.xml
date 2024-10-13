@@ -23,7 +23,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="加入了RC_init，仍然能进中断" />
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="在startup中使用RC_init，仍然能进中断">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/startup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/startup.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728831460544</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="在startup中使用RC_init，仍然能进中断">
+      <option name="closed" value="true" />
+      <created>1728831603286</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728831603286</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +276,7 @@
     <MESSAGE value="把定义挪到RC.cpp" />
     <MESSAGE value="美观化" />
     <MESSAGE value="加入了RC_init，仍然能进中断" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入了RC_init，仍然能进中断" />
+    <MESSAGE value="在startup中使用RC_init，仍然能进中断" />
+    <option name="LAST_COMMIT_MESSAGE" value="在startup中使用RC_init，仍然能进中断" />
   </component>
 </project>

@@ -32,6 +32,8 @@ void RC::init()
 
 void RC_init()
 {
+	__HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
+	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
 	RC::init();
 	memset(rx_buf_, 0, sizeof(rx_buf_));
 	memset(rx_data_, 0, sizeof(rx_data_));
