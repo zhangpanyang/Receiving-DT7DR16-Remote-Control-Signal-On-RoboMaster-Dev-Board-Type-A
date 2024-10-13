@@ -13,6 +13,11 @@ int linearMappingFloat2Int(float in,float in_min,float in_max,int out_min,int ou
 	return (out_max-out_min)*(in-in_min)/(in_max-in_min)+out_min;
 }
 
+void RC_init()
+{
+
+}
+
 void RC::init()
 {
 	memset(rx_buf_, 0, sizeof(rx_buf_));

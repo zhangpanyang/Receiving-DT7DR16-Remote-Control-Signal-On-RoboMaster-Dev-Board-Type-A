@@ -3,9 +3,11 @@
 //
 
 #include "startup.h"
+#include "RC.h"
 
 void startup()
 {
+	// RC_init();
 	while(1)
 	{
 
