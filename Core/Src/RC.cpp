@@ -34,15 +34,19 @@ void RC::init()
 
 }
 
+int cnt = 0;
+
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
+	cnt ++;
 	if (huart == &huart1)
 	{
-		// if (Size == RC_RX_BUF_SIZE)
-		// {
-		// 	RC::frameHandle();
-		// }
+		std::memcpy(rx_buf_, rx_data_, sizeof(rx_buf_));
 		HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+		if (Size == RC_RX_BUF_SIZE)
+		{
+			RC::frameHandle();
+		}
 	}
 }
 
@@ -56,8 +60,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 void RC::frameHandle()
 {
-	std::memcpy(rx_buf_, rx_data_, sizeof(rx_buf_));
-
 	channel_.r_row = linearMappingInt2Float((uint16_t)rx_data_[0]<<3 | rx_data_[1]>>5,										364, 1684, -1.0, 1.0);
 	channel_.l_col = linearMappingInt2Float((uint16_t)(rx_data_[1]&0x1f)<<6 | rx_data_[2]>>2,								364, 1684, -1.0, 1.0);
 	channel_.r_col = linearMappingInt2Float((uint16_t)(rx_data_[2]&0x03)<<9 | (uint16_t)rx_data_[3]<<1 | rx_data_[4]>>7,	364, 1684, -1.0, 1.0);
