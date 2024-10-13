@@ -43,6 +43,7 @@ public:
 		RCMouseClickState_e l;
 		RCMouseClickState_e r;
 	} mouse_;
+	static uint8_t keys_;
 
 	static void init();
 	static void frameHandle();
@@ -51,5 +52,9 @@ uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
 uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
 RC::RCChannel RC::channel_;
 RC::RCSwitch RC::switch_;
+RC::RCMouse RC::mouse_;
+uint8_t RC::keys_;
+
+enum {RC_KEY_W, RC_KEY_S, RC_KEY_A, RC_KEY_D, RC_KEY_Q, RC_KEY_E, RC_KEY_SHIFT, RC_KEY_CTRL};
 
 #endif //RC_H

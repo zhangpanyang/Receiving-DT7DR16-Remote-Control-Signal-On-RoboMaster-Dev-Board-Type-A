@@ -51,4 +51,12 @@ void RC::frameHandle()
 	switch_.r = RCSwitchStates[ (rx_data_[5]>>2 & 0x03) - 1 ];
 	switch_.l = RCSwitchStates[ (rx_data_[5] & 0x03) - 1 ];
 
+	mouse_.x = linearMappingInt2Float( (uint16_t)((uint16_t)rx_data_[6]<<8 | rx_data_[7]), -32768, 32767, -1.0, 1.0);
+	mouse_.y = linearMappingInt2Float( (uint16_t)((uint16_t)rx_data_[8]<<8 | rx_data_[9]), -32768, 32767, -1.0, 1.0);
+	mouse_.z = linearMappingInt2Float( (uint16_t)((uint16_t)rx_data_[10]<<8 | rx_data_[11]), -32768, 32767, -1.0, 1.0);
+
+	mouse_.l = RCMouseClickStates[ rx_data_[12] ];
+	mouse_.l = RCMouseClickStates[ rx_data_[13] ];
+
+	keys_ = rx_data_[14];
 }

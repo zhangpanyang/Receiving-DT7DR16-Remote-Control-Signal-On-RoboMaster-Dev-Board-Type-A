@@ -23,8 +23,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="初步解码">
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="定义鼠标状态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/RC.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728704622044</updated>
       <workItem from="1728704629081" duration="4073000" />
-      <workItem from="1728787027029" duration="9090000" />
+      <workItem from="1728787027029" duration="11937000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -182,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728804241718</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="定义鼠标状态">
+      <option name="closed" value="true" />
+      <created>1728804578319</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728804578319</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +222,7 @@
     <MESSAGE value="Fix frameHandle" />
     <MESSAGE value="linearMapping" />
     <MESSAGE value="初步解码" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步解码" />
+    <MESSAGE value="定义鼠标状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="定义鼠标状态" />
   </component>
 </project>
