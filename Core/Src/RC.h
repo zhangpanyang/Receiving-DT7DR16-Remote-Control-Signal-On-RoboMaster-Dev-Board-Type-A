@@ -16,6 +16,9 @@ const int RC_RX_DATA_SIZE = 18;
 typedef enum{UP_POS, DOWN_POS, MID_POS}  RCSwitchState_e;
 const RCSwitchState_e RCSwitchStates[] = {UP_POS, DOWN_POS, MID_POS};
 
+typedef enum{MOUSE_UP, MOUSE_DOWN}  RCMouseClickState_e;
+const RCMouseClickState_e RCMouseClickStates[] = {MOUSE_UP, MOUSE_DOWN};
+
 class RC{
 private:
 	static uint8_t rx_buf_[RC_RX_BUF_SIZE];
@@ -32,11 +35,21 @@ public:
 		RCSwitchState_e l;
 		RCSwitchState_e r;
 	} switch_;
+	static struct RCMouse {
+		float x;
+		float y;
+		float z;
+
+		RCMouseClickState_e l;
+		RCMouseClickState_e r;
+	} mouse_;
 
 	static void init();
 	static void frameHandle();
 };
 uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
 uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
+RC::RCChannel RC::channel_;
+RC::RCSwitch RC::switch_;
 
 #endif //RC_H
