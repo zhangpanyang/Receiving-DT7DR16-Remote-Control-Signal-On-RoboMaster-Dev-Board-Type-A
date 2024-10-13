@@ -13,8 +13,8 @@ int linearMappingFloat2Int(float in,float in_min,float in_max,int out_min,int ou
 	return (out_max-out_min)*(in-in_min)/(in_max-in_min)+out_min;
 }
 
-uint8_t RC::rx_buf_[RC_RX_BUF_SIZE];
-uint8_t RC::rx_data_[RC_RX_DATA_SIZE];
+uint8_t rx_buf_[RC_RX_BUF_SIZE];
+uint8_t rx_data_[RC_RX_DATA_SIZE];
 RCChannel RC::channel_;
 RCSwitch RC::switch_;
 RCMouse RC::mouse_;
@@ -31,24 +31,32 @@ void RC::init()
 	switch_.l = MID_POS;
 	switch_.r = MID_POS;
 
-	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+
 }
 
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
 	if (huart == &huart1)
 	{
-		if (Size == RC_RX_BUF_SIZE)
-		{
-			RC::frameHandle();
-		}
+		// if (Size == RC_RX_BUF_SIZE)
+		// {
+		// 	RC::frameHandle();
+		// }
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart == &huart1)
+	{
+		RC::frameHandle();
 	}
 }
 
 void RC::frameHandle()
 {
 	std::memcpy(rx_buf_, rx_data_, sizeof(rx_buf_));
-	HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
 
 	channel_.r_row = linearMappingInt2Float((uint16_t)rx_data_[0]<<3 | rx_data_[1]>>5,										364, 1684, -1.0, 1.0);
 	channel_.l_col = linearMappingInt2Float((uint16_t)(rx_data_[1]&0x1f)<<6 | rx_data_[2]>>2,								364, 1684, -1.0, 1.0);

@@ -42,10 +42,9 @@ struct RCMouse {
 
 class RC{
 private:
-	static uint8_t rx_buf_[RC_RX_BUF_SIZE];
-	static uint8_t rx_data_[RC_RX_DATA_SIZE];
 
 public:
+
 	static RCChannel  channel_;
 	static RCSwitch switch_;
 	static RCMouse mouse_;

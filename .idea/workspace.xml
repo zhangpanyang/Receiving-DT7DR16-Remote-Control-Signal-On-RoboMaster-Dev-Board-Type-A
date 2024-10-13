@@ -23,19 +23,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="bug">
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="把定义挪到RC.cpp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/RC.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/startup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/startup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvoptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/rc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/rc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32DBUSTest.elf.dir/Core/Src/RC.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32DBUSTest.elf.dir/Core/Src/RC.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32DBUSTest.elf.dir/Core/Src/startup.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32DBUSTest.elf.dir/Core/Src/startup.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32DBUSTest.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728823985391</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="把定义挪到RC.cpp">
+      <option name="closed" value="true" />
+      <created>1728825181811</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728825181811</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +266,7 @@
     <MESSAGE value="定义鼠标状态" />
     <MESSAGE value="开始实测" />
     <MESSAGE value="bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug" />
+    <MESSAGE value="把定义挪到RC.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="把定义挪到RC.cpp" />
   </component>
 </project>
