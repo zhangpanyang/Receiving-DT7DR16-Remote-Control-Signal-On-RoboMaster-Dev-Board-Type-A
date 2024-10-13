@@ -22,17 +22,21 @@ uint8_t RC::keys_;
 
 void RC::init()
 {
-	memset(rx_buf_, 0, sizeof(rx_buf_));
-	memset(rx_data_, 0, sizeof(rx_data_));
 	channel_.l_col = 0;
 	channel_.l_row = 0;
 	channel_.r_col = 0;
 	channel_.r_row = 0;
 	switch_.l = MID_POS;
 	switch_.r = MID_POS;
-
-
 }
+
+void RC_init()
+{
+	RC::init();
+	memset(rx_buf_, 0, sizeof(rx_buf_));
+	memset(rx_data_, 0, sizeof(rx_data_));
+}
+
 
 int cnt = 0;
 

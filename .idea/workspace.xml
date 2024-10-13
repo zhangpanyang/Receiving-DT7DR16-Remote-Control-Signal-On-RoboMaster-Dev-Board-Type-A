@@ -23,9 +23,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="把定义挪到RC.cpp">
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="美观化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728825181811</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="美观化">
+      <option name="closed" value="true" />
+      <created>1728830883699</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728830883699</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +261,7 @@
     <MESSAGE value="开始实测" />
     <MESSAGE value="bug" />
     <MESSAGE value="把定义挪到RC.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="把定义挪到RC.cpp" />
+    <MESSAGE value="美观化" />
+    <option name="LAST_COMMIT_MESSAGE" value="美观化" />
   </component>
 </project>
