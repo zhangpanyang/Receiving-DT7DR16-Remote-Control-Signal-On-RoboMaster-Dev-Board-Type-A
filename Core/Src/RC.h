@@ -14,23 +14,23 @@ enum RCSwitchState_e {UP_POS, MID_POS, DOWN_POS};
 
 class RC{
 private:
-	uint8_t rx_buf_[RC_RX_BUF_SIZE] = {};
-	uint8_t rx_data_[RC_RX_DATA_SIZE] = {};
+	static uint8_t rx_buf_[RC_RX_BUF_SIZE];
+	static uint8_t rx_data_[RC_RX_DATA_SIZE];
 
 public:
-	struct RCChannel{
+	static struct RCChannel{
 		float r_row;
 		float r_col;
 		float l_row;
 		float l_col;
 	} channel_;
-	struct RCSwitch {
+	static struct RCSwitch {
 		RCSwitchState_e l;
 		RCSwitchState_e r;
 	} switch_;
 
-	void init();
-
+	static void init();
+	static void frameHandle();
 };
 
 

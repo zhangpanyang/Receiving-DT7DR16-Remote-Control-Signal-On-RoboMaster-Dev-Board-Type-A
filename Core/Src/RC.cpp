@@ -3,8 +3,8 @@
 //
 
 #include "RC.h"
-
-#include <string.h>
+#include "usart.h"
+#include <cstring>
 
 float linearMap(int oriMin, int oriMax, float tarMin, float tarMax, int x)
 {
@@ -21,4 +21,20 @@ void RC::init()
 	channel_.r_row = 0;
 	switch_.l = MID_POS;
 	switch_.r = MID_POS;
+
+	HAL_UART_Receive_DMA(&huart1, rx_buf_, RC_RX_BUF_SIZE);
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart == &huart1)
+	{
+		RC::frameHandle();
+	}
+}
+
+void RC::frameHandle()
+{
+	std::memcpy(rx_buf_, rx_data_, sizeof(rx_buf_));
+	std::memset(rx_buf_, 0, sizeof(rx_buf_));
 }

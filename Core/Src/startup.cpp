@@ -4,6 +4,9 @@
 
 #include "startup.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 void startup()
 {
 	while(1)
@@ -11,3 +14,6 @@ void startup()
 
 	}
 }
+#ifdef __cplusplus
+}
+#ifdef

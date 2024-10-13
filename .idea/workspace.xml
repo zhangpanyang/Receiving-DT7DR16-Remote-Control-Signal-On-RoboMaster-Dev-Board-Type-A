@@ -23,12 +23,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="Add startup.cpp startup.h">
-      <change afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/RC.h" afterDir="false" />
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="Enable DMA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/RC.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/startup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/startup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32DBUSTest.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32DBUSTest.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Work/EmbeddedProjects/ProgramingProjects/STM32DBUSTest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Work/EmbeddedProjects/ProgramingProjects/STM32UARTTest&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,12 +79,12 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="STM32DBUSTest.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32DBUSTest" TARGET_NAME="STM32DBUSTest.elf" CONFIG_NAME="Debug-MinGW-STM32" RUN_TARGET_PROJECT_NAME="STM32DBUSTest" RUN_TARGET_NAME="STM32DBUSTest.elf">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="STM32DBUSTest.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32DBUSTest" TARGET_NAME="STM32DBUSTest.elf" CONFIG_NAME="Debug-MinGW-STM32" RUN_TARGET_PROJECT_NAME="STM32DBUSTest" RUN_TARGET_NAME="STM32DBUSTest.elf">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -97,7 +98,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728704622044</updated>
-      <workItem from="1728704629081" duration="1879000" />
+      <workItem from="1728704629081" duration="4073000" />
+      <workItem from="1728787027029" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -115,7 +117,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728705480820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create RC class">
+      <option name="closed" value="true" />
+      <created>1728706584900</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728706584900</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Enable DMA">
+      <option name="closed" value="true" />
+      <created>1728706703889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728706703889</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Enable DMA">
+      <option name="closed" value="true" />
+      <created>1728706714310</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728706714310</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premiere" />
     <MESSAGE value="Add startup.cpp startup.h" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add startup.cpp startup.h" />
+    <MESSAGE value="Create RC class" />
+    <MESSAGE value="Enable DMA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable DMA" />
   </component>
 </project>
