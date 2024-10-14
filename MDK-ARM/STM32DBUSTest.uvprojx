@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -481,19 +481,9 @@
               <FilePath>..\Core\Src\RC.cpp</FilePath>
             </File>
             <File>
-              <FileName>RC.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Core\Src\RC.h</FilePath>
-            </File>
-            <File>
               <FileName>startup.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\Core\Src\startup.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>startup.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Core\Src\startup.h</FilePath>
             </File>
           </Files>
         </Group>
