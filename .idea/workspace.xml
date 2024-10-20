@@ -23,43 +23,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="把启动receive的东西放进RC_init里面就不行了！为什么！">
+    <list default="true" id="e54f760a-f0fa-42f4-8511-a95cfa72b109" name="更改" comment="关掉o3，万事大吉（恼">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/RC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/RC.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvguix.Sunny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest.uvprojx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/STM32DBUSTest_STM32DBUSTest.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/dma.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/gpio.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/rc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/rc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup_stm32f427xx.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/startup_stm32f427xx.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_cortex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_cortex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_dma.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_dma_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_dma_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_exti.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_exti.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_flash.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_flash.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_flash_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_flash_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_gpio.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_msp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_msp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_pwr.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_pwr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_pwr_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_pwr_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_rcc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_rcc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_rcc_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_rcc_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_uart.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_hal_uart.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/stm32f4xx_it.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/system_stm32f4xx.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/system_stm32f4xx.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/usart.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32DBUSTest/usart.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/startup_stm32f427xx.s" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/startup_stm32f427xx.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM32DBUSTest.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32DBUSTest.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +42,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zhangpanyang"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zhangpanyang/Receiving-DT7DR16-Remote-Control-Signal-On-RoboMaster-Dev-Board-Type-A",
+    "accountId": "1572fbfb-54c2-4fc0-b315-5a7d89b3fb89"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://E:/Work/EmbeddedProjects/ProgramingProjects/STM32DBUSTest/Core/Src/RC.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Work/EmbeddedProjects/ProgramingProjects/STM32DBUSTest/Core/Src/RC.h" root0="SKIP_HIGHLIGHTING" />
@@ -142,7 +122,8 @@
       <updated>1728704622044</updated>
       <workItem from="1728704629081" duration="4073000" />
       <workItem from="1728787027029" duration="11937000" />
-      <workItem from="1728885307913" duration="3000" />
+      <workItem from="1728885307913" duration="29000" />
+      <workItem from="1729426893035" duration="101000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -280,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728831874538</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="关掉o3，万事大吉（恼">
+      <option name="closed" value="true" />
+      <created>1728885330621</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728885330621</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +308,7 @@
     <MESSAGE value="加入了RC_init，仍然能进中断" />
     <MESSAGE value="在startup中使用RC_init，仍然能进中断" />
     <MESSAGE value="把启动receive的东西放进RC_init里面就不行了！为什么！" />
-    <option name="LAST_COMMIT_MESSAGE" value="把启动receive的东西放进RC_init里面就不行了！为什么！" />
+    <MESSAGE value="关掉o3，万事大吉（恼" />
+    <option name="LAST_COMMIT_MESSAGE" value="关掉o3，万事大吉（恼" />
   </component>
 </project>
